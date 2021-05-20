@@ -1,0 +1,1 @@
+INSERT INTO customers values("Paco","Fulanez","paco@dummy.dumb",10001)
