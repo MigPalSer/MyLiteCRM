@@ -37,7 +37,7 @@ public class MyLiteCrmApplication {
 	}
 
 	@Bean
-	public LocalContainerEntityManagerFactoryBean entityManagerFactoryBean() {
+	public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
 
 		LocalContainerEntityManagerFactoryBean entityManagerFactoryBean = new LocalContainerEntityManagerFactoryBean();
 		entityManagerFactoryBean.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
@@ -55,7 +55,7 @@ public class MyLiteCrmApplication {
 	@Bean
 	public PlatformTransactionManager transactionManager() {
 		JpaTransactionManager transactionmanager=new JpaTransactionManager();
-		transactionmanager.setEntityManagerFactory(entityManagerFactoryBean().getObject());
+		transactionmanager.setEntityManagerFactory(entityManagerFactory().getObject());
 		return transactionmanager;
 	}
 }

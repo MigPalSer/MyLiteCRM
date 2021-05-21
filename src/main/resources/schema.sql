@@ -1,2 +1,2 @@
 DROP TABLE IF EXISTS customers;
-CREATE TABLE customers ( `name` VARCHAR(20) NOT NULL , `surnames` VARCHAR(40) NOT NULL , `email` VARCHAR(30) NOT NULL , `phonenumber` INT , PRIMARY KEY (`email`)) ENGINE = InnoDB;
+CREATE TABLE customers ( `name` VARCHAR(20) , `surnames` VARCHAR(40)  , `email` VARCHAR(30) NOT NULL , `phonenumber` INT , PRIMARY KEY (`email`)) ENGINE = InnoDB;
